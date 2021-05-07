@@ -1,5 +1,7 @@
 # Geoffrey Vincent Blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/94ad16ea-0ce1-455c-8e73-05e8b6bbb4ff/deploy-status)](https://app.netlify.com/sites/geoffrey-vincent/deploys)
+
 clone of https://github.com/bencodezen/bens-blog-boilerplate
 
 ## Technology Stack
