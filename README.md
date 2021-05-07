@@ -1,10 +1,10 @@
-# Geoffrey Vincent Blog
+### Personal blog
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad16ea-0ce1-455c-8e73-05e8b6bbb4ff/deploy-status)](https://app.netlify.com/sites/geoffrey-vincent/deploys)
 
 clone of https://github.com/bencodezen/bens-blog-boilerplate
 
-## Technology Stack
+#### Technology stack
 
 - Framework: [Vue.js](https://www.vuejs.org)
 - Static Site Generation: [Nuxt](https://www.nuxtjs.org)
@@ -13,7 +13,7 @@ clone of https://github.com/bencodezen/bens-blog-boilerplate
 - CSS Pre-processor: [Sass](https://sass-lang.com/)
 - CSS Framework: [TailwindCSS](https://tailwindcss.com/)
 
-## Build Setup
+#### Build
 
 ```bash
 # install dependencies
