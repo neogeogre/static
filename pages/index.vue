@@ -1,65 +1,57 @@
-<template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        static
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
-</template>
-
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    AppLogo
+    Logo
   }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<template>
+  <div class="container mx-auto text-center">
+    <div>
+      <logo class="mt-20" />
+      <h1 class="title">
+        Geoffrey Vincent
+      </h1>
+      <p class="subtitle">Not your average blogsss boilerplate!</p>
+      <nuxt-link to="/learn" class="button">Call to Action!</nuxt-link>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+@import '../styles/_settings.scss';
+
+.button {
+  display: inline-block;
+  @apply mt-3;
+  font-size: 1.2rem;
+  font-family: $ff-serif;
+  color: #fff;
+  background-color: $c-primary;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  transition: background-color 0.1s ease;
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  @apply block;
+  @apply mt-3;
+  color: $c-navy;
+  font-family: $ff-sans;
+  @apply font-semibold;
+  @apply text-5xl;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #57708a;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  font-family: $ff-serif;
 }
 </style>
-
