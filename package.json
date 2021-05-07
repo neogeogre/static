@@ -1,8 +1,8 @@
 {
-  "name": "bencodezen",
+  "name": "static",
   "version": "1.0.0",
   "description": "My website",
-  "author": "Ben Hong",
+  "author": "Geoffrey Vincent",
   "license": "MIT",
   "private": true,
   "scripts": {
