@@ -1,4 +1,5 @@
 export default {
+  target: 'static', // default is 'server'
   mode: 'universal',
   /*
    ** Headers of the page
