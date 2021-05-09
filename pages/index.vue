@@ -13,9 +13,9 @@ export default {
     <div>
       <logo class="mt-20" />
       <h1 class="title">
-        Geoffrey Vincent
+        Your Brand
       </h1>
-      <p class="subtitle">Not your average blogsss boilerplate!</p>
+      <p class='subtitle'>Not your average blog boilerplate!</p>
       <nuxt-link to="/learn" class="button">Call to Action!</nuxt-link>
     </div>
   </div>

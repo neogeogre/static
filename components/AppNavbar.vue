@@ -15,7 +15,7 @@ export default {}
           class='navbar-logo-image'
           src='~/assets/avatar.png'
         />
-        Geoffrey Vincent
+        YOUR BRAND HERE
       </nuxt-link>
     </div>
     <div class='navbar-item-wrapper'>

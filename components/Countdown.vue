@@ -19,7 +19,7 @@ export default {
     daysLeft() {
       return Math.floor(
         this.timeRemaining /
-        (SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY)
+          (SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY)
       )
     },
     hoursLeft() {
