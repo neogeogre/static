@@ -25,7 +25,7 @@ export default {
     hoursLeft() {
       return Math.floor(
         (this.timeRemaining / (SECONDS_IN_MINUTE * MINUTES_IN_HOUR)) %
-        HOURS_IN_DAY
+          HOURS_IN_DAY
       )
     },
     minutesLeft() {
