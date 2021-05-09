@@ -1,57 +1,46 @@
-<script>
-import Logo from '~/components/Logo.vue'
+<template>
+  <div class="home-container">
+    <div class="u-full-width">
+      <h1 class="site-title">
+        <!-- Define Custom Site title or completely change the page -->
+        nuxt<span class="txt-color"> static </span>skeleton
+      </h1>
+      <p>
+        Starter Template for a Nuxt-based Blog
+      </p>
+      <a class="no-highlighter" href="https://github.com/gms64/nuxt-static-skeleton" target="_blank">
+        <button class="button-primary">
+          See the Repo
+        </button>
+      </a>
 
+    </div>
+    <!-- This is used to load the netlify identity widget so you can use Netlify CMS -->
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </div>
+</template>
+
+<script>
 export default {
-  components: {
-    Logo
+  // Define SEO Variables / Site Title, etc.
+  head() {
+    return {
+      title: this.siteName || 'Home Page',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'A website created with Nuxt Static Skeleton'
+        }
+      ]
+    };
+  },
+  async asyncData({env}) {
+    const siteName = env.SITE_NAME
+    return {
+      siteName
+    }
   }
 }
 </script>
 
-<template>
-  <div class="container mx-auto text-center">
-    <div>
-      <logo class="mt-20" />
-      <h1 class="title">
-        Your Brand
-      </h1>
-      <p class='subtitle'>Not your average blog boilerplate!</p>
-      <nuxt-link to="/learn" class="button">Call to Action!</nuxt-link>
-    </div>
-  </div>
-</template>
-
-<style lang="scss" scoped>
-@import '../styles/_settings.scss';
-
-.button {
-  display: inline-block;
-  @apply mt-3;
-  font-size: 1.2rem;
-  font-family: $ff-serif;
-  color: #fff;
-  background-color: $c-primary;
-  padding: 0.8rem 1.6rem;
-  border-radius: 4px;
-  transition: background-color 0.1s ease;
-}
-
-.title {
-  @apply block;
-  @apply mt-3;
-  color: $c-navy;
-  font-family: $ff-sans;
-  @apply font-semibold;
-  @apply text-5xl;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 1.3;
-  color: #57708a;
-  padding-bottom: 15px;
-  font-family: $ff-serif;
-}
-</style>

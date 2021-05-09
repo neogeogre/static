@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid">
-    <h1 class="m20">blog</h1>
+    <h1>Blog</h1>
     <hr>
     <div v-for="article of articles" :key="article.slug">
       <h3 class="mb10">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          {{ article.title.toLowerCase() }}
+          {{ article.title }}
         </NuxtLink>
       </h3>
       <p><em>{{ (article.date || article.createdAt) | moment("MMMM Do, YYYY") }}</em></p>
@@ -17,6 +17,7 @@
     </div>
     <PrevNextPg :nextPg="nextPg" :prevPg="prevPg"/>
   </div>
+
 </template>
 
 <script>
@@ -44,8 +45,8 @@ export default {
     // Retrieves current posts for the page.  
     // Also looks one page ahead to see if we should add a 'Next Page' link
     const postsPerPage = +env.POSTS_PER_PAGE || 5
-    const pgNum = 1 // Since this is the first page of the blog
-    const prevPg = null // No prevPg variable
+    const pgNum = +params.id
+    const prevPg = pgNum - 1
     const articles = await $content('posts')
         .only(['title', 'summary', 'slug', 'createdAt', 'date'])
         .sortBy('date', 'desc')
@@ -72,6 +73,7 @@ export default {
       articles,
       prevPg,
       nextPg,
+      pgNum,
       siteName
     }
   }
