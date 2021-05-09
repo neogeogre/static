@@ -8,7 +8,7 @@
       <p>
         Starter Template for a Nuxt-based Blog
       </p>
-      <a class="no-highlighter" href="https://github.com/gms64/nuxt-static-skeleton" target="_blank">
+      <a class="no-highlighter" href="https://github.com/gms64/static" target="_blank">
         <button class="button-primary">
           See the Repo
         </button>

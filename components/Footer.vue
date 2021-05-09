@@ -12,7 +12,7 @@
           <div class="box">
                 <span class="footer-link">
                   <!-- Update your Git Profile Link -->
-                  <a aria-label="Github" href="https://github.com/gms64/nuxt-static-skeleton" target="_blank">
+                  <a aria-label="Github" href="https://github.com/gms64/static" target="_blank">
                     <img alt="Github" class="icon-filter" height="24"
                          src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" style="color:#fff;"
                          width="24"/>
