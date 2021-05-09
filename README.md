@@ -17,16 +17,16 @@ clone of https://github.com/bencodezen/bens-blog-boilerplate
 
 ```bash
 # install dependencies
-$ yarn install
+yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+yarn dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+yarn build
+yarn start
 
 # generate static project
-$ yarn generate
+yarn generate
+npm run generate
 ```
-
