@@ -15,7 +15,7 @@ export default {}
           src="~/assets/avatar.png"
           alt="Your Logo"
         />
-        YOUR BRAND HERE
+        Geoffrey
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
