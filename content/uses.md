@@ -3,7 +3,7 @@
 People like learning about what gear you use. Here is a template with some ideas for you!
 
 <p class="mt-3">
-🎩 This page is inspired from <a href="https://wesbos.com/uses/">Wes Bos' Uses page.</a>
+This page is inspired from <a href="https://wesbos.com/uses/">Wes Bos' Uses page.</a>
 </p>
 
 ## Hardware
