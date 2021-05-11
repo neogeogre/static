@@ -15,7 +15,9 @@
 
 ```bash
 # install dependencies
+ncu -u # https://github.com/raineorshine/npm-check-updates
 npm install
+npm audit fix --force
 
 # serve with hot reload at localhost:3000
 npm run dev
