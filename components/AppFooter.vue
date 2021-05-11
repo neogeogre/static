@@ -17,9 +17,7 @@ export default {
 <template>
   <footer class="footer">
     <SocialMediaBar />
-    <p class='text-center'>
-      Geoffrey {{ currentYear }} <a href='https://www.nuxtjs.org'>NuxtJS</a>
-    </p>
+    <p class='text-center'>Geoffrey {{ currentYear }}</p>
   </footer>
 </template>
 

@@ -14,18 +14,9 @@
 #### Build Setup
 
 ```bash
-# install dependencies
-ncu -u # https://github.com/raineorshine/npm-check-updates
-npm install
-npm audit fix --force
-
-# serve with hot reload at localhost:3000
-npm run dev
-
-# build for production and launch server
-npm run build
-npm run start
-
-# generate static project
-npm run generate
+yarn install # install dependencies
+yarn dev # serve with hot reload at localhost:3000
+yarn build # build for production and launch server
+yarn start
+yarn generate # generate static project
 ```
